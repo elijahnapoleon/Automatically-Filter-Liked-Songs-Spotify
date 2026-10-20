@@ -29,7 +29,7 @@ async function fetchPlaylists(token){
 
 async function fetchSavedTracks(token){
     const data = await fetchSpotify(token,"me/tracks?limit=50");
-    return data.items;
+    return data;
 }
 
 export {fetchFollowedArtists, fetchProfile, fetchPlaylists,fetchSavedTracks};

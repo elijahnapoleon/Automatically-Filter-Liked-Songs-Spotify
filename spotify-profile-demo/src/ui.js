@@ -43,7 +43,8 @@ function populatePlaylists(playlists){
     populateList(playlists,"playlists");
 }
 
-function populateSavedTracks(liked){
+function populateSavedTracks(like){
+    const liked = like.items;
     const container = document.getElementById("liked");
     container.innerHTML = "";
 
