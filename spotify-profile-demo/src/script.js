@@ -2,7 +2,7 @@ import { redirectToAuthCodeFlow, getAccessToken } from "./auth";
 import {fetchFollowedArtists, fetchProfile,fetchPlaylists, fetchSavedTracks} from "./spotify";
 import {populateArtist, populateUI,populatePlaylists, populateSavedTracks} from "./ui";
 
-const clientId = "b672c16679d3493096fb5efd2f45a9ea"; // Replace with your client ID
+const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID; // Replace with your client ID
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
